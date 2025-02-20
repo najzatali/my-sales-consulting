@@ -16,7 +16,7 @@
         header {
             background: linear-gradient(135deg, #333333, #666666);
             color: #fff;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
         header h1 {
@@ -26,8 +26,23 @@
         }
         header p {
             font-size: 1.2em;
-            margin: 10px 0 0;
+            margin: 20px 0;
             color: #fff;
+        }
+        .cta-button {
+            background: #ff6f00;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background: #e65c00;
         }
         .container {
             width: 90%;
@@ -40,25 +55,30 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        .services, .testimonials, .cases, .contact {
+        .about, .problems, .cases, .testimonials, .process, .contact {
             margin-bottom: 80px;
         }
-        .service-card, .testimonial, .case, .contact-form {
+        .about-content, .problem-card, .case, .testimonial, .process-step, .contact-form {
             background: #fff;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
-        .service-card h3, .case h3 {
+        .about-content img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .problem-card h3, .case h3, .testimonial h3, .process-step h3 {
             color: #ff6f00;
             font-size: 1.8em;
             margin-top: 0;
         }
-        .service-card ul, .case ul {
+        .problem-card ul, .case ul, .process-step ul {
             padding-left: 20px;
         }
-        .service-card ul li, .case ul li {
+        .problem-card ul li, .case ul li, .process-step ul li {
             margin-bottom: 10px;
         }
         .testimonial p {
@@ -103,68 +123,81 @@
         footer a:hover {
             text-decoration: underline;
         }
-        .image-block {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .image-block img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
+    <!-- Первый экран -->
     <header>
-        <h1>Системный отдел продаж</h1>
-        <p>Консалтинг для бизнеса: от хаоса к системе</p>
+        <h1>Как за 60 дней выстроить системный отдел продаж и увеличить выручку?</h1>
+        <p>Методика, которая освободит владельца от продаж и сделает команду эффективной</p>
+        <a href="https://t.me/najzat" class="cta-button">Получить 3 бесплатных урока</a>
     </header>
 
-    <div class="container">
-        <!-- Услуги -->
-        <section class="services">
-            <h2>Мои услуги</h2>
-            <div class="service-card">
-                <h3>Построение отдела продаж</h3>
-                <p>Создаем отдел продаж с нуля или оптимизируем существующий. Внедряем процессы, которые работают.</p>
-                <ul>
-                    <li>Анализ текущих процессов</li>
-                    <li>Разработка структуры отдела</li>
-                    <li>Внедрение CRM-систем</li>
-                </ul>
+    <!-- Обо мне -->
+    <section class="about">
+        <div class="container">
+            <h2>Кто я и чем могу помочь?</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/200" alt="Фото эксперта">
+                <p>Я — эксперт по построению системных отделов продаж с 10-летним опытом. Моя методика помогла более 50 компаниям увеличить выручку и освободить владельцев от рутины. Я знаю, как превратить хаос в систему, которая работает без вашего участия.</p>
             </div>
-            <div class="service-card">
-                <h3>Обучение и найм</h3>
-                <p>Учу, как правильно нанимать сотрудников и запускать их в работу. Создаем систему адаптации.</p>
-                <ul>
-                    <li>Разработка системы найма</li>
-                    <li>Обучение менеджеров</li>
-                    <li>Создание системы мотивации</li>
-                </ul>
-            </div>
-            <div class="service-card">
-                <h3>Продающие скрипты</h3>
-                <p>Пишем скрипты, которые действительно продают. Отрабатываем возражения и повышаем конверсию.</p>
-                <ul>
-                    <li>Анализ текущих скриптов</li>
-                    <li>Разработка новых скриптов</li>
-                    <li>Обучение команды</li>
-                </ul>
-            </div>
-            <div class="service-card">
-                <h3>Модели продаж</h3>
-                <p>Подбираем модель продаж, которая подходит именно вашему бизнесу.</p>
-                <ul>
-                    <li>Анализ текущей модели</li>
-                    <li>Разработка новой стратегии</li>
-                    <li>Внедрение и тестирование</li>
-                </ul>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Отзывы -->
-        <section class="testimonials">
-            <h2>Отзывы</h2>
+    <!-- Основные боли -->
+    <section class="problems">
+        <div class="container">
+            <h2>Основные боли бизнеса</h2>
+            <div class="problem-card">
+                <h3>Проблемы, с которыми сталкиваются клиенты</h3>
+                <ul>
+                    <li>Отсутствие системы в продажах</li>
+                    <li>Хаос и низкая конверсия</li>
+                    <li>Собственник вынужден заниматься всем</li>
+                    <li>Нет контроля над процессом</li>
+                </ul>
+            </div>
+            <div class="problem-card">
+                <h3>Как я решаю эти проблемы</h3>
+                <ul>
+                    <li>Создаю структурированный отдел продаж</li>
+                    <li>Внедряю CRM-системы и автоматизацию</li>
+                    <li>Обучаю менеджеров и внедряю мотивацию</li>
+                    <li>Повышаю конверсию и выручку</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кейсы -->
+    <section class="cases">
+        <div class="container">
+            <h2>Кейсы и результаты клиентов</h2>
+            <div class="case">
+                <h3>Строительная компания</h3>
+                <p><strong>Результат:</strong> Увеличение выручки с 25 млн до 40 млн за 4 месяца.</p>
+                <ul>
+                    <li>Пересобрали отдел продаж</li>
+                    <li>Внедрили CRM и автоматизацию</li>
+                    <li>Увеличили конверсию на 30%</li>
+                </ul>
+            </div>
+            <div class="case">
+                <h3>Стоматологическая клиника</h3>
+                <p><strong>Результат:</strong> Увеличение потока клиентов на 50% за 3 месяца.</p>
+                <ul>
+                    <li>Создали новый конверсионный сайт</li>
+                    <li>Обучили администраторов</li>
+                    <li>Внедрили скрипты продаж</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
             <div class="testimonial">
                 <p>"Благодаря вашему консалтингу мы увеличили выручку на 40% за полгода. Профессионально и эффективно!"</p>
                 <p><strong>Иван, строительная компания</strong></p>
@@ -173,53 +206,48 @@
                 <p>"Теперь наш отдел продаж работает как часы. Спасибо за системный подход!"</p>
                 <p><strong>Анна, стоматологическая клиника</strong></p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Кейсы -->
-        <section class="cases">
-            <h2>Кейсы</h2>
-            <div class="case">
-                <h3>Строительная компания по загородной недвижимости</h3>
-                <p><strong>Проблема:</strong> Хаос в продажах, отсутствие структуры, собственник вынужден заниматься всем.</p>
-                <p><strong>Решение:</strong></p>
-                <ul>
-                    <li>Пересобрали отдел продаж и поменяли модель продаж.</li>
-                    <li>Поставили отдельного человека на входящие заявки.</li>
-                    <li>Наняли руководителя отдела продаж.</li>
-                    <li>Усилили маркетинг и внедрили новую мотивацию.</li>
-                    <li>Внедрили OKR для оцифровки бизнес-процессов.</li>
-                </ul>
-                <p><strong>Результат:</strong> Выручка выросла с 25 млн до 40 млн рублей за 4 месяца.</p>
+    <!-- Процесс работы -->
+    <section class="process">
+        <div class="container">
+            <h2>Как проходит работа?</h2>
+            <div class="process-step">
+                <h3>1. Разбор бизнеса</h3>
+                <p>Анализируем текущие процессы и выявляем слабые места.</p>
             </div>
-            <div class="case">
-                <h3>Стоматологическая клиника</h3>
-                <p><strong>Проблема:</strong> Красивая клиника, но отсутствие клиентов и неэффективные продажи.</p>
-                <p><strong>Решение:</strong></p>
-                <ul>
-                    <li>Определили целевую аудиторию.</li>
-                    <li>Создали новый конверсионный сайт.</li>
-                    <li>Привлекли подрядчиков для увеличения трафика.</li>
-                    <li>Создали новую мотивацию для сотрудников.</li>
-                    <li>Прописали скрипты для работы с базой клиентов.</li>
-                </ul>
-                <p><strong>Результат:</strong> Поток новых клиентов увеличился на 50% за 3 месяца.</p>
+            <div class="process-step">
+                <h3>2. Диагностика</h3>
+                <p>Определяем ключевые метрики и ставим цели.</p>
             </div>
-        </section>
+            <div class="process-step">
+                <h3>3. Внедрение инструментов</h3>
+                <p>Внедряем CRM, скрипты, мотивацию и автоматизацию.</p>
+            </div>
+            <div class="process-step">
+                <h3>4. Рост выручки</h3>
+                <p>Достигаем запланированных результатов и масштабируем.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Форма обратной связи -->
-        <section class="contact">
-            <h2>Свяжитесь со мной</h2>
+    <!-- Форма заявки -->
+    <section class="contact">
+        <div class="container">
+            <h2>Заявка на консультацию</h2>
             <div class="contact-form">
                 <form action="#" method="post">
                     <input type="text" name="name" placeholder="Ваше имя" required>
-                    <input type="email" name="email" placeholder="Ваш email" required>
-                    <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
-                    <button type="submit">Отправить</button>
+                    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                    <input type="text" name="business" placeholder="Ваш бизнес" required>
+                    <button type="submit">Отправить заявку</button>
                 </form>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
+    <!-- Футер -->
     <footer>
         <p>Свяжитесь со мной: <a href="mailto:najzatali@gmail.com">najzatali@gmail.com</a> | Телеграм: <a href="https://t.me/najzat">@najzat</a></p>
         <p>&copy; 2023 Системный отдел продаж</p>

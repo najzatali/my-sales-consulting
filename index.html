@@ -14,18 +14,20 @@
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background: linear-gradient(135deg, #333333, #666666);
             color: #fff;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
+            color: #ff6f00;
         }
         header p {
             font-size: 1.2em;
             margin: 10px 0 0;
+            color: #fff;
         }
         .container {
             width: 90%;
@@ -33,24 +35,24 @@
             margin: 40px auto;
         }
         h2 {
-            color: #2575fc;
-            font-size: 2em;
+            color: #ff6f00;
+            font-size: 2.5em;
             margin-bottom: 20px;
             text-align: center;
         }
-        .services, .testimonials, .cases {
-            margin-bottom: 60px;
+        .services, .testimonials, .cases, .contact {
+            margin-bottom: 80px;
         }
-        .service-card, .testimonial, .case {
+        .service-card, .testimonial, .case, .contact-form {
             background: #fff;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .service-card h3, .case h3 {
-            color: #2575fc;
-            font-size: 1.5em;
+            color: #ff6f00;
+            font-size: 1.8em;
             margin-top: 0;
         }
         .service-card ul, .case ul {
@@ -67,6 +69,26 @@
             margin-top: 10px;
             font-weight: bold;
         }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background: #ff6f00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #e65c00;
+        }
         footer {
             background: #333;
             color: #fff;
@@ -75,11 +97,20 @@
             margin-top: 60px;
         }
         footer a {
-            color: #fff;
+            color: #ff6f00;
             text-decoration: none;
         }
         footer a:hover {
             text-decoration: underline;
+        }
+        .image-block {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-block img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -96,18 +127,38 @@
             <div class="service-card">
                 <h3>Построение отдела продаж</h3>
                 <p>Создаем отдел продаж с нуля или оптимизируем существующий. Внедряем процессы, которые работают.</p>
+                <ul>
+                    <li>Анализ текущих процессов</li>
+                    <li>Разработка структуры отдела</li>
+                    <li>Внедрение CRM-систем</li>
+                </ul>
             </div>
             <div class="service-card">
                 <h3>Обучение и найм</h3>
                 <p>Учу, как правильно нанимать сотрудников и запускать их в работу. Создаем систему адаптации.</p>
+                <ul>
+                    <li>Разработка системы найма</li>
+                    <li>Обучение менеджеров</li>
+                    <li>Создание системы мотивации</li>
+                </ul>
             </div>
             <div class="service-card">
                 <h3>Продающие скрипты</h3>
                 <p>Пишем скрипты, которые действительно продают. Отрабатываем возражения и повышаем конверсию.</p>
+                <ul>
+                    <li>Анализ текущих скриптов</li>
+                    <li>Разработка новых скриптов</li>
+                    <li>Обучение команды</li>
+                </ul>
             </div>
             <div class="service-card">
                 <h3>Модели продаж</h3>
                 <p>Подбираем модель продаж, которая подходит именно вашему бизнесу.</p>
+                <ul>
+                    <li>Анализ текущей модели</li>
+                    <li>Разработка новой стратегии</li>
+                    <li>Внедрение и тестирование</li>
+                </ul>
             </div>
         </section>
 
@@ -153,35 +204,24 @@
                 </ul>
                 <p><strong>Результат:</strong> Поток новых клиентов увеличился на 50% за 3 месяца.</p>
             </div>
-            <div class="case">
-                <h3>Интернет-магазин электроники</h3>
-                <p><strong>Проблема:</strong> Низкая конверсия из заявок в продажи, отсутствие системы в работе менеджеров.</p>
-                <p><strong>Решение:</strong></p>
-                <ul>
-                    <li>Внедрили CRM-систему для автоматизации процессов.</li>
-                    <li>Обучили менеджеров работе с возражениями.</li>
-                    <li>Создали скрипты для обработки входящих заявок.</li>
-                    <li>Оптимизировали маркетинговую стратегию.</li>
-                </ul>
-                <p><strong>Результат:</strong> Конверсия выросла на 35%, а средний чек увеличился на 20%.</p>
-            </div>
-            <div class="case">
-                <h3>Фитнес-клуб</h3>
-                <p><strong>Проблема:</strong> Низкая посещаемость, отсутствие системы продаж абонементов.</p>
-                <p><strong>Решение:</strong></p>
-                <ul>
-                    <li>Разработали систему лояльности для клиентов.</li>
-                    <li>Обучили администраторов продажам.</li>
-                    <li>Создали скрипты для работы с возражениями.</li>
-                    <li>Запустили рекламную кампанию с акцентом на уникальные предложения.</li>
-                </ul>
-                <p><strong>Результат:</strong> Продажи абонементов выросли на 60% за 2 месяца.</p>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="contact">
+            <h2>Свяжитесь со мной</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>Свяжитесь со мной: <a href="mailto:ваш.email@example.com">ваш.email@example.com</a></p>
+        <p>Свяжитесь со мной: <a href="mailto:najzatali@gmail.com">najzatali@gmail.com</a> | Телеграм: <a href="https://t.me/najzat">@najzat</a></p>
         <p>&copy; 2023 Системный отдел продаж</p>
     </footer>
 </body>

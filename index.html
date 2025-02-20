@@ -3,101 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Консалтинг по продажам</title>
+    <title>Консалтинг для системного отдела продаж</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
             color: #333;
         }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .testimonial, .case {
+            background: #fff;
             padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .header {
+        .testimonial p, .case p {
+            margin: 0 0 10px;
+        }
+        .testimonial p:last-child, .case p:last-child {
+            margin-bottom: 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
             text-align: center;
-            padding: 40px 0;
-            background-color: #f4f4f4;
+            padding: 20px 0;
+            margin-top: 40px;
         }
-        .section {
-            padding: 30px 0;
-        }
-        .section h2 {
-            color: #2c3e50;
-            text-align: center;
-        }
-        .case, .review {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #27ae60;
-            color: white;
+        footer a {
+            color: #fff;
             text-decoration: none;
-            border-radius: 5px;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <h1>Консалтинг по продажам</h1>
-            <p>Помогаю бизнесу выстраивать системные продажи и увеличивать прибыль</p>
-            <a href="mailto:ваш@email.com" class="cta-button">Связаться со мной</a>
-        </div>
-    </div>
+    <header>
+        <h1>Системный отдел продаж</h1>
+        <p>Консалтинг для вашего бизнеса</p>
+    </header>
 
-    <div class="section">
-        <div class="container">
-            <h2>Услуги</h2>
-            <p>Системный отдел продаж • Найм и адаптация • Продающие скрипты • Отработка возражений • Модель продаж</p>
-        </div>
-    </div>
+    <div class="container">
+        <!-- О себе -->
+        <section>
+            <h2>Обо мне</h2>
+            <p>Я помогаю компаниям выстроить системный отдел продаж, нанимать правильных сотрудников, запускать их в работу и создавать продающие скрипты. Мы разбираемся, какая модель продаж подходит именно вашей компании, и учимся эффективно отрабатывать возражения.</p>
+        </section>
 
-    <div class="section">
-        <div class="container">
+        <!-- Услуги -->
+        <section>
+            <h2>Мои услуги</h2>
+            <ul>
+                <li>Построение отдела продаж с нуля</li>
+                <li>Обучение найму и адаптации сотрудников</li>
+                <li>Создание продающих скриптов</li>
+                <li>Отработка возражений</li>
+                <li>Подбор модели продаж для вашего бизнеса</li>
+            </ul>
+        </section>
+
+        <!-- Отзывы -->
+        <section>
+            <h2>Отзывы</h2>
+            <div class="testimonial">
+                <p>"Благодаря консалтингу мы смогли увеличить выручку на 30% за 3 месяца. Очень профессиональный подход!"</p>
+                <p><strong>Иван, владелец строительной компании</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Мы наконец-то наладили процессы в отделе продаж. Теперь все работает как часы."</p>
+                <p><strong>Анна, директор стоматологической клиники</strong></p>
+            </div>
+        </section>
+
+        <!-- Кейсы -->
+        <section>
             <h2>Кейсы</h2>
             <div class="case">
-                <h3>Строительная компания</h3>
-                <p><strong>Проблема:</strong> Хаос в продажах, собственник устал.</p>
-                <p><strong>Решение:</strong> Пересобрали отдел, сменили модель, наняли РОПа, усилили маркетинг.</p>
-                <p><strong>Результат:</strong> Выручка с 25 млн до 40 млн рублей за 4 месяца.</p>
+                <h3>Строительная компания по загородной недвижимости</h3>
+                <p><strong>Проблема:</strong> Хаос в продажах, отсутствие структуры, собственник вынужден заниматься всем.</p>
+                <p><strong>Решение:</strong></p>
+                <ul>
+                    <li>Пересобрали отдел продаж и поменяли модель продаж.</li>
+                    <li>Поставили отдельного человека на входящие заявки.</li>
+                    <li>Наняли руководителя отдела продаж.</li>
+                    <li>Усилили маркетинг и внедрили новую мотивацию.</li>
+                    <li>Внедрили OKR для оцифровки бизнес-процессов.</li>
+                </ul>
+                <p><strong>Результат:</strong> Выручка выросла с 25 млн до 40 млн рублей за 4 месяца.</p>
             </div>
             <div class="case">
                 <h3>Стоматологическая клиника</h3>
-                <p><strong>Проблема:</strong> Нет клиентов, администраторы не умели продавать.</p>
-                <p><strong>Решение:</strong> Новый сайт, скрипты, мотивация, офферы.</p>
-                <p><strong>Результат:</strong> Поток клиентов +50% за 3 месяца.</p>
+                <p><strong>Проблема:</strong> Красивая клиника, но отсутствие клиентов и неэффективные продажи.</p>
+                <p><strong>Решение:</strong></p>
+                <ul>
+                    <li>Определили целевую аудиторию.</li>
+                    <li>Создали новый конверсионный сайт.</li>
+                    <li>Привлекли подрядчиков для увеличения трафика.</li>
+                    <li>Создали новую мотивацию для сотрудников.</li>
+                    <li>Прописали скрипты для работы с базой клиентов.</li>
+                </ul>
+                <p><strong>Результат:</strong> Поток новых клиентов увеличился на 50% за 3 месяца.</p>
             </div>
-        </div>
+        </section>
     </div>
 
-    <div class="section">
-        <div class="container">
-            <h2>Отзывы</h2>
-            <div class="review">
-                <h3>Алексей</h3>
-                <p>"Порядок в продажах, выручка выросла на 60%. Спасибо!"</p>
-            </div>
-            <div class="review">
-                <h3>Елена</h3>
-                <p>"Клиентов стало больше, команда мотивирована. Отличный подход!"</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="container">
-            <h2>Связаться со мной</h2>
-            <p>Готов помочь вашему бизнесу расти!</p>
-            <a href="mailto:ваш@email.com" class="cta-button">Написать</a>
-        </div>
-    </div>
+    <footer>
+        <p>Свяжитесь со мной: <a href="mailto:ваш.email@example.com">ваш.email@example.com</a></p>
+        <p>&copy; 2023 Системный отдел продаж</p>
+    </footer>
 </body>
 </html>

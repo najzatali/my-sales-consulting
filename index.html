@@ -5,16 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Консалтинг по продажам</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background: #2c3e50; color: white; padding: 20px; text-align: center; font-size: 24px; }
-        .container { width: 80%; margin: auto; padding: 20px; }
-        .section { background: white; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; }
-        .testimonial { font-style: italic; background: #ecf0f1; padding: 10px; border-left: 4px solid #3498db; }
-        .contact-form { background: #ecf0f1; padding: 15px; border-radius: 5px; }
-        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
-        button { background: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
-        button:hover { background: #2980b9; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .case-card, .testimonial-card {
+            background: #ecf0f1;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-form {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            display: block;
+            width: 100%;
+        }
+        button:hover {
+            background: #2980b9;
+        }
     </style>
 </head>
 <body>
@@ -27,17 +83,20 @@
         
         <div class="section">
             <h2>Кейсы</h2>
-            <h3>Строительная компания</h3>
-            <p>Помогли компании перестроить отдел продаж, увеличить лиды, внедрить мотивацию и систему контроля, что привело к росту выручки с 25 млн до 40 млн рублей за 4 месяца.</p>
-            
-            <h3>Стоматологическая клиника</h3>
-            <p>Оптимизировали маркетинг, внедрили новые стратегии продаж, улучшили конверсию и увеличили поток клиентов на 50% за 3 месяца.</p>
+            <div class="case-card">
+                <h3>Строительная компания</h3>
+                <p>Помогли компании перестроить отдел продаж, увеличить лиды, внедрить мотивацию и систему контроля, что привело к росту выручки с 25 млн до 40 млн рублей за 4 месяца.</p>
+            </div>
+            <div class="case-card">
+                <h3>Стоматологическая клиника</h3>
+                <p>Оптимизировали маркетинг, внедрили новые стратегии продаж, улучшили конверсию и увеличили поток клиентов на 50% за 3 месяца.</p>
+            </div>
         </div>
         
         <div class="section">
             <h2>Отзывы</h2>
-            <div class="testimonial">"Отличный специалист, помог нам масштабироваться и выстроить системные продажи!" – Иван Петров</div>
-            <div class="testimonial">"После работы с вами, наш бизнес вырос на 60%!" – Анна Смирнова</div>
+            <div class="testimonial-card">"Отличный специалист, помог нам масштабироваться и выстроить системные продажи!" – Иван Петров</div>
+            <div class="testimonial-card">"После работы с вами, наш бизнес вырос на 60%!" – Анна Смирнова</div>
         </div>
         
         <div class="section">
